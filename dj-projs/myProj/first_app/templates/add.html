@@ -1,0 +1,7 @@
+<h1>Add member page template</h1>
+<form action="addrecord/" method="post">
+{% csrf_token %} <!-- to handle csrf or cross site request forgeries in forms having post attribute-->
+FIRST NAME :<input name="first"><br><br>
+LAST_NAME :<input name="last"><br><br>
+<input type="submit" value="Add">
+</form>
